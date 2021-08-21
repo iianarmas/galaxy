@@ -1,0 +1,21 @@
+<MenuWidget>:
+    canvas.before:
+        Color:
+            rgba: 0, 0, 0, 0.8
+        Rectangle:
+            size:self.size
+    Label:
+        font_name: "fonts/Sackers-Gothic-Std-Light.ttf"
+        font_size: dp(60)
+        text: root.parent.menu_title
+        pos_hint: {"center_x": 0.5, "center_y": 0.6}
+    Button:
+        font_name: "fonts/Eurostile.ttf"
+        font_size: dp(30)
+        text: root.parent.menu_button_title
+        pos_hint: {"center_x": 0.5, "center_y": 0.3}
+        size_hint: 0.2, 0.15
+        on_press: root.parent.on_menu_button_pressed()  # defining on main
+        background_normal: ''
+        background_color: 1, 0.3, 0.4, 0.85
+
